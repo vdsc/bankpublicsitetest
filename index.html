@@ -34,6 +34,7 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="container">
@@ -52,7 +53,9 @@
     <div class="container">
       <h1>Your Community Bank</h1>
       <p>Serving West Texas for over 100 years with integrity, loyalty, and a strong community spirit.</p>
-      <button style="margin-top:26px; background:#0460a9; color:white; font-size:1.15rem; padding:14px 32px; border:none; border-radius:5px; cursor:pointer;">Open an Account</button>
+      <button style="margin-top:26px; background:#0460a9; color:white; font-size:1.15rem; padding:14px 32px; border:none; border-radius:5px; cursor:pointer;">
+        Open an Account
+      </button>
     </div>
   </section>
 
@@ -83,7 +86,8 @@
           <div class="footer-info">
             © 2025 First United Bank. Member FDIC. Equal Housing Lender.<br>
             123 Main Street, West Texas, USA<br>
-            <a href="#" style="color:#c5e2f6;">Privacy Policy</a> | <a href="#" style="color:#c5e2f6;">Terms of Use</a>
+            <a href="#" style="color:#c5e2f6;">Privacy Policy</a> |
+            <a href="#" style="color:#c5e2f6;">Terms of Use</a>
           </div>
           <div class="footer-links">
             <a href="#">Personal</a>
@@ -92,27 +96,33 @@
             <a href="#">Contact</a>
           </div>
         </div>
-        <div class="chat-placeholder">
-               <script type='text/javascript'>
-      	/*function initEmbeddedMessaging() {
-      		try {
-      			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-      
-      			embeddedservice_bootstrap.init(
-      				'00DWB000005v1J3',
-      				'Service_Agent_Channel_FUB',
-      				'https://firstunitedbank--agentforce.sandbox.my.site.com/ESWServiceAgentChannel1762545073998',
-      				{
-      					scrt2URL: 'https://firstunitedbank--agentforce.sandbox.my.salesforce-scrt.com'
-      				}
-      			);
-      		} catch (err) {
-      			console.error('Error loading Embedded Messaging: ', err);
-      		}*/
-      	};
-      </script>
-      <script type='text/javascript' src='https://firstunitedbank--agentforce.sandbox.my.site.com/ESWServiceAgentChannel1762545073998/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
+        <!-- Embedded Messaging -->
+        <div class="chat-placeholder">
+          <script type="text/javascript">
+            function initEmbeddedMessaging() {
+              try {
+                embeddedservice_bootstrap.settings.language = 'en_US';
+
+                embeddedservice_bootstrap.init(
+                  '00D6g000003tgem',
+                  'Web_Chat',
+                  'https://firstunitedbank.my.site.com/ESWWebChat1769138551380',
+                  {
+                    scrt2URL: 'https://firstunitedbank.my.salesforce-scrt.com'
+                  }
+                );
+              } catch (err) {
+                console.error('Error loading Embedded Messaging: ', err);
+              }
+            }
+          </script>
+
+          <script
+            type="text/javascript"
+            src="https://firstunitedbank.my.site.com/ESWWebChat1769138551380/assets/js/bootstrap.min.js"
+            onload="initEmbeddedMessaging()">
+          </script>
         </div>
       </div>
     </div>
